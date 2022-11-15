@@ -2,23 +2,26 @@ import React from 'react'
 import GithubCalendar from "react-github-calendar"
 import styled from "styled-components"
 
-const GitCalender = () => {   
-  return (
-    <GithubContainer>
-        <h2>Github Calendar</h2>
-        <div className="mainContainer">
-            <div className="paramGit">
-                <GithubCalendar username="paramjeetrawat265"/>
+const GitCalender = () => {
+    return (
+        <GithubContainer>
+            <h2>Github Calendar</h2>
+            <div className="mainContainer">
+                <div className="paramGit">
+                    <GithubCalendar username="paramjeetrawat265" />
+                </div>
+                <div className="contribution">
+                    <p><img align="center" src="https://github-readme-stats.vercel.app/api?username=paramjeetrawat265&show_icons=true&locale=en" alt="paramjeetrawat265" /></p>
+                </div>
+                <div className="contribution">
+                    <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=paramjeetrawat265&" alt="paramjeetrawat265" /></p>
+                </div>
             </div>
-            <div className="contribution">
-                <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=paramjeetrawat265&" alt="paramjeetrawat265" /></p>
-            </div>
-        </div>
-    </GithubContainer>
-  )
+        </GithubContainer>
+    )
 }
 
-const GithubContainer=styled.div`
+const GithubContainer = styled.div`
 width:100%;
 margin:auto;
 padding:10px;
