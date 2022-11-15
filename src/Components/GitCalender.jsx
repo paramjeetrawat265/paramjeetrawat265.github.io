@@ -1,61 +1,79 @@
 import React from 'react'
-import GithubCalendar from "react-github-calendar"
-import styled from "styled-components"
-
-const GitCalender = () => {
+import styled from 'styled-components';
+import GithubCalendar from 'react-github-calendar'
+const Github = () => {
     return (
-        <GithubContainer>
-            <h2>Github Calendar</h2>
-            <div className="mainContainer">
-                <div className="paramGit">
-                    <GithubCalendar username="paramjeetrawat265" />
-                </div>
-                <div className="contribution">
-                    <p><img align="center" src="https://github-readme-stats.vercel.app/api?username=paramjeetrawat265&show_icons=true&locale=en" alt="paramjeetrawat265" /></p>
-                </div>
-                <div className="contribution">
-                    <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=paramjeetrawat265&" alt="paramjeetrawat265" /></p>
-                </div>
+        <MainContainer style={{ marginTop: "-20px" }}>
+            
+            <h1 style={{ color: "#01a479", textTransform: "uppercase" }}>Days I Worked</h1>
+            <Container>
+                <GithubCalendar username='paramjeetrawat265' year={new Date().getFullYear()} blockSize={15} blockMargin={5} fontSize={16} />
+            </Container>
+            <h1 style={{ color: "#01a479", textTransform: "uppercase" }}>My Statistics</h1>
+            <div className='stats'>
+                <img align="center" src="https://github-readme-stats.vercel.app/api?username=paramjeetrawat265&show_icons=true&locale=en" alt="paramjeetrawat265" />
+                <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=paramjeetrawat265&" alt="paramjeetrawat265" />
             </div>
-        </GithubContainer>
+        </MainContainer>
     )
 }
 
-const GithubContainer = styled.div`
-width:100%;
-margin:auto;
-padding:10px;
+const Container = styled.div`
+    margin:auto;
+    width:80%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:50px;
+    flex-direction:column;
+    border:10px solid #f0f0fb;
+    border-radius:50px 5px 50px 5px;
+    padding:30px 10px 30px 10px;
+`
 
-    h2{
-        color:#00203FFF; 
-  text-align:center;  
-  font-size:35px;
-  font-weight:800;
-  font-family:Robot;
-  letter-spacing:2px;
-  margin:10px auto ;
-    }
-
-    .mainContainer{
-        padding:40px;
+const MainContainer = styled.div`
+    .stats{
+        width:80%;
+        margin:auto;
         display:flex;
-        flex-direction:column;
         justify-content:center;
-        align-items:center;
+        border-radius:50px;
+        margin-bottom:50px;
     }
 
-    .paramGit{
-        border-radius:10px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-        padding:20px;
-        height:200px;
-        width:100%;
+    .stats>img{
+        padding:20px 10px 20px 10px;
     }
 
-    @media (max-width:481px){ 
-        display:none;
-    }
-    
-`;
+    @media only screen and (min-width: 769px) and (max-width:1110px){
+        .stats{
+            flex-direction:column; 
+        }
 
-export default GitCalender
+    }
+
+    @media only screen and (min-width: 481px) and (max-width:768px){
+        
+        .stats{
+            flex-direction:column; 
+        }
+    }
+
+
+    @media only screen and (min-width:320px) and (max-width:480px){
+        .stats{
+            width:90%;
+            flex-direction:column; 
+        }
+    }
+
+    @media only screen and (max-width: 319px){
+        .stats{
+            width:90%;
+            flex-direction:column; 
+        }
+    }
+
+`
+
+export default Github
