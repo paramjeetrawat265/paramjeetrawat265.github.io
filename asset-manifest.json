@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8251a4d8.css",
+    "main.js": "/static/js/main.43212fbb.js",
+    "static/js/787.8091073b.chunk.js": "/static/js/787.8091073b.chunk.js",
+    "static/media/dotandkey.jpeg": "/static/media/dotandkey.c56be28a5715780ccb4e.jpeg",
+    "static/media/bluefly.jpeg": "/static/media/bluefly.e5c2633b227193483c05.jpeg",
+    "static/media/naukri.jpeg": "/static/media/naukri.d979de48e6bb15ba5841.jpeg",
+    "static/media/Paramjeet_Resume.pdf": "/static/media/Paramjeet_Resume.5b8033c2577cebeb96a2.pdf",
+    "static/media/paramjeet_image.png": "/static/media/paramjeet_image.97530f945fc4a9c19684.png",
+    "static/media/react.png": "/static/media/react.22d1f2096ed82cab7a8a.png",
+    "static/media/mysql.png": "/static/media/mysql.5f8a211c010a92959207.png",
+    "static/media/css.png": "/static/media/css.845e8eb63836bef093cf.png",
+    "static/media/algo.png": "/static/media/algo.93a3773a1ca3835d2130.png",
+    "static/media/github.jpg": "/static/media/github.53afa45c46b30bb05afb.jpg",
+    "static/media/redux.png": "/static/media/redux.7fec6369cecd1cbd44d6.png",
+    "static/media/node.png": "/static/media/node.b508473ad71a31ce2fae.png",
+    "static/media/signature.png": "/static/media/signature.a0697d3e94ec41c134b2.png",
+    "static/media/html.png": "/static/media/html.4e6edfe05f07c383e94f.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.8251a4d8.css.map": "/static/css/main.8251a4d8.css.map",
+    "main.43212fbb.js.map": "/static/js/main.43212fbb.js.map",
+    "787.8091073b.chunk.js.map": "/static/js/787.8091073b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8251a4d8.css",
+    "static/js/main.43212fbb.js"
+  ]
+}
